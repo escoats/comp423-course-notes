@@ -18,12 +18,72 @@ println("Hello World!")
 
 ## Setup: Creating a Repository🕳️🚶‍♀️
 ### 1. Create Local Directory and Initialize Git
+Create a new directory for your project: 
+
+```
+mkdir rust-project
+cd rust-project
+```
+
+Initialize a new Git repository:
+```
+git init
+```
 ### 2. Create Remote Repository
 ### 3. Link Local Repository to GitHub
 
 ## Configure Dev Container💃
 ### 1. Add Dev Container Configuration
-### 2. Add `requirements.txt` Dependency Configuration
-### 3. Reopen Project in Dev Container
+Open your `rust-project` directory in VSCode. 
+Install the *Dev Containers* extension for VSCode.
+Cretae a `.devcontainer` directory in the root of your prokect. Inside, create a file called `devcontainer.json`.
 
-## Hello World!
+The `devcontainer.json` file contains the configuration for your development environment: 
+
+```
+{
+  "name": "My Rust Project",
+  "image": "mcr.microsoft.com/vscode/devcontainers/rust:latest",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": ["rust-lang.rust-analyzer"]
+    }
+  }
+}
+```
+### 2. **(remove?)** Add `requirements.txt` Dependency Configuration
+### 3. Reopen Project in Dev Container
+In the VSCode command palette (`Ctrl+Shift+P`), type "Dev Containers: Reopen in Container."
+
+Make sure your dev container is running a recent version of Rust with `rustc --version`.
+
+## Hello World!👋🌎
+To create a binary project, run `cargo new <project-name> --vcs none`.
+
+```rust
+cargo new hello-world --vcs none
+```
+
+cd into your new package: `cd hello-world`
+
+Your `main.rs` file should contain the following:
+```rust
+
+fn main() {
+    println!("Hello COMP423!");
+}
+```
+
+Build your file with `cargo build`. 
+**ADD INSTRUCTIONS FOR THIS!**
+
+Run your file with `cargo run`
+**discuss difference from build**
+
+Your output should be:
+```
+Hello COMP423!
+```
+
+All done!
