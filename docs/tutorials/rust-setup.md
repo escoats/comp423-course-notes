@@ -1,4 +1,4 @@
-# Setting up a dev container for Rust
+# Setting up a Dev Container for Rust
 
 * Primary author: [Lizzie Coats](https://github.com/escoats)
 * Reviewer: [Caroline Bryan](https://github.com/cgbryan1)
@@ -9,16 +9,18 @@
 println("Hello World!")
 ```
 
-## Prerequisites🫦
-1. GitHub Account
-2. Git installed
-3. VSCode installed
-4. Docker installed
-5. Basic command-line proficiency
+## Prerequisites
+Before getting started, make sure you've done the following:  
 
-## Setup: Creating a Repository🕳️🚶‍♀️
-### 1. Create Local Directory and Initialize Git
-Create a new directory for your project: 
+* Create a [Github](https://github.com) Account
+* Install VSCode
+* Install Git
+* Install Docker Desktop
+
+## **Setup: Creating a Repository** 🚧 🚜
+### 1. Create Local Directory and Initialize Git  
+
+In your terminal, create a new directory for your project: 
 
 ```
 mkdir rust-project
@@ -29,10 +31,33 @@ Initialize a new Git repository:
 ```
 git init
 ```
-### 2. Create Remote Repository
-### 3. Link Local Repository to GitHub
+Finally, create a README file and commit it to your repository:
+```
+echo "# Rust Project" > README.md
+git add .
+git commit -m "Add README"
 
-## Configure Dev Container💃
+```
+### 2. Create Remote Repository
+On GitHub, create a new repository:
+>
+>*  _Name:_ `rust-project`
+>*  _Description:_ "My rust project!"
+>
+>Do not initialize the repository with a README - we already created one locally!
+
+### 3. Link Local Repository to GitHub
+In your project directory, add the GitHub repository as a remote:
+```
+git remote add origin https://github.com/<username>/rust-project.git
+```
+
+Push your commits to your remote repository:
+```
+git push -u origin main
+```
+
+## **Configure Dev Container** 🐳 🚢
 ### 1. Add Dev Container Configuration
 Open your `rust-project` directory in VSCode. 
 Install the *Dev Containers* extension for VSCode.
@@ -52,38 +77,34 @@ The `devcontainer.json` file contains the configuration for your development env
   }
 }
 ```
-### 2. **(remove?)** Add `requirements.txt` Dependency Configuration
-### 3. Reopen Project in Dev Container
+
+### 2. Reopen Project in Dev Container
 In the VSCode command palette (`Ctrl+Shift+P`), type "Dev Containers: Reopen in Container."
 
-Make sure your dev container is running a recent version of Rust with `rustc --version`.
+Make sure your dev container is running a recent version of Rust with `rustc --version` (The most recent version released is 1.84.0).
 
-## Hello World!👋🌎
-To create a binary project, run `cargo new <project-name> --vcs none`.
-
+## **Hello World!** 👋 🌎
+1. To create a binary project, run `cargo new <project-name> --vcs none`.
 ```rust
 cargo new hello-world --vcs none
 ```
 
-cd into your new package: `cd hello-world`
+2. cd into your new package: `cd hello-world`.  
 
-Your `main.rs` file should contain the following:
+
+3. Edit your `main.rs` file to contain the following:
 ```rust
-
 fn main() {
     println!("Hello COMP423!");
 }
 ```
 
-Build your file with `cargo build`. 
-**ADD INSTRUCTIONS FOR THIS!**
+4. Build your file with `cargo build`. This command compiles your human-readable program (Rust code) and links any necessary dependencies, turning them into an executable file (binary).  
 
-Run your file with `cargo run`
-**discuss difference from build**
 
+5. Run your file with `cargo run`. This command runs the file created in the previous step!  
 Your output should be:
 ```
 Hello COMP423!
 ```
-
-All done!
+6. If your output matches, you've successfully set up a dev container for Rust!
