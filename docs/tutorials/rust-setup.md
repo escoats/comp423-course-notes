@@ -4,6 +4,8 @@
 * Reviewer: [Caroline Bryan](https://github.com/cgbryan1)
 * Adapted from [*COMP 423: Starting a Static Website Project with MKDocs*](https://comp423-25s.github.io/resources/MkDocs/tutorial/)
 
+This tutorial will walk you through creating a dev container for programming in Rust, including how to create and connect a new repository!
+
 ``` rust
 // This is an example of a code block!
 println("Hello World!")
@@ -17,7 +19,7 @@ Before getting started, make sure you've done the following:
 * Install Git
 * Install Docker Desktop
 
-## **Setup: Creating a Repository** 🚧 🚜
+## **Setup: Create a Repository** 🚧 🚜
 ### 1. Create Local Directory and Initialize Git  
 
 In your terminal, create a new directory for your project: 
@@ -52,7 +54,7 @@ In your project directory, add the GitHub repository as a remote:
 git remote add origin https://github.com/<username>/rust-project.git
 ```
 
-Push your commits to your remote repository:
+Push your first commit to the remote repository:
 ```
 git push -u origin main
 ```
