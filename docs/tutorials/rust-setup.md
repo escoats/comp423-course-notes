@@ -102,7 +102,7 @@ fn main() {
 4. Build your file with `cargo build`. This command compiles your human-readable program (Rust code) and links any necessary dependencies, turning them into an executable file (binary).  
 
 
-5. Run your file with `cargo run`. This command runs the file created in the previous step!  
+5. Run your program with `cargo run`. This command runs the file created in the previous step!
 Your output should be:
 ```
 Hello COMP423!
