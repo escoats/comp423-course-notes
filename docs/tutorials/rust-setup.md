@@ -40,7 +40,7 @@ git commit -m "Add README"
 ```
 
 ???+ Note
-    `echo "text" > README.md` pipes the text output by echo into the file. Put whatever you want inside the quotes!
+    `echo "text" > README.md` pipes the text output by echo into the README file. Put whatever you want inside the quotes!
 
 ### 2. Create Remote Repository
 On GitHub, create a new repository:
