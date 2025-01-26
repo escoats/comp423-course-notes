@@ -6,12 +6,7 @@
 
 This tutorial will walk you through creating a dev container for programming in Rust, including how to create and connect a new repository!
 
-``` rust
-// This is an example of a code block!
-println("Hello World!")
-```
-
-## Prerequisites
+## **Prerequisites**
 Before getting started, make sure you've done the following:  
 
 * Create a [Github](https://github.com) Account
@@ -42,11 +37,11 @@ git commit -m "Add README"
 ```
 ### 2. Create Remote Repository
 On GitHub, create a new repository:
->
->*  _Name:_ `rust-project`
->*  _Description:_ "My rust project!"
->
->Do not initialize the repository with a README - we already created one locally!
+
+*  _Name:_ `rust-project`
+*  _Description:_ "My rust project!"
+
+Do not initialize the repository with a README - we already created one locally!
 
 ### 3. Link Local Repository to GitHub
 In your project directory, add the GitHub repository as a remote:
@@ -63,7 +58,7 @@ git push -u origin main
 ### 1. Add Dev Container Configuration
 Open your `rust-project` directory in VSCode. 
 Install the *Dev Containers* extension for VSCode.
-Cretae a `.devcontainer` directory in the root of your prokect. Inside, create a file called `devcontainer.json`.
+Create a `.devcontainer` directory in the root of your project. Inside, create a file called `devcontainer.json`.
 
 The `devcontainer.json` file contains the configuration for your development environment: 
 
