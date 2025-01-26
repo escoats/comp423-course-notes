@@ -53,6 +53,8 @@ Push your first commit to the remote repository:
 ```
 git push -u origin main
 ```
+???+ Note
+    The -u flag creates a tracking relationship between the main branch in your local repository and the one in your remote repository. The full length of this flag is ```--set-upstream```.
 
 ## **Configure Dev Container** 🐳 🚢
 ### 1. Add Dev Container Configuration
@@ -78,7 +80,10 @@ The `devcontainer.json` file contains the configuration for your development env
 ### 2. Reopen Project in Dev Container
 In the VSCode command palette (`Ctrl+Shift+P`), type "Dev Containers: Reopen in Container."
 
-Make sure your dev container is running a recent version of Rust with `rustc --version` (The most recent version released is 1.84.0).
+Make sure your dev container is running a recent version of Rust with `rustc --version` 
+
+???+ Note
+    The most recent version of Rust currently available is 1.84.0.
 
 ## **Hello World!** 👋 🌎
 1. To create a binary project, run `cargo new <project-name> --vcs none`.
@@ -86,22 +91,30 @@ Make sure your dev container is running a recent version of Rust with `rustc --v
 cargo new hello-world --vcs none
 ```
 
-2. cd into your new package: `cd hello-world`.  
+???+ Note
+    The `--vcs none` flag blocks the creation of another repository.
+
+1. cd into your new package: `cd hello-world`.  
 
 
-3. Edit your `main.rs` file to contain the following:
+2. Edit your `main.rs` file to contain the following:
 ```rust
 fn main() {
     println!("Hello COMP423!");
 }
 ```
 
-4. Build your file with `cargo build`. This command compiles your human-readable program (Rust code) and links any necessary dependencies, turning them into an executable file (binary).  
+3. Build your file with `cargo build`. This command compiles your human-readable program (Rust code) and links any necessary dependencies, turning them into an executable file (binary).  
 
 
-5. Run your program with `cargo run`. This command runs the file created in the previous step!
+4. Run your program with `cargo run`. This command runs the file created in the previous step!
 Your output should be:
 ```
 Hello COMP423!
 ```
-6. If your output matches, you've successfully set up a dev container for Rust. Congratulations!🎉
+
+???+ Note
+    If you've made any changes to your program after running `cargo build`, `cargo run` will re-compile and run the program in the same step!
+
+
+If your output matches, you've successfully set up a dev container for Rust. Congratulations!🎉
