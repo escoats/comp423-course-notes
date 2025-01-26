@@ -24,6 +24,9 @@ mkdir rust-project
 cd rust-project
 ```
 
+???+ Note
+    `mkdir` creates a new directory and `cd` navigates into it!
+
 Initialize a new Git repository:
 ```
 git init
@@ -35,6 +38,10 @@ git add .
 git commit -m "Add README"
 
 ```
+
+???+ Note
+    `echo "text" > README.md` copies the text into the file. Put whatever you want inside the quotes!
+
 ### 2. Create Remote Repository
 On GitHub, create a new repository:
 
