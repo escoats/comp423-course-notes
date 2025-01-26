@@ -109,4 +109,4 @@ Your output should be:
 ```
 Hello COMP423!
 ```
-6. If your output matches, you've successfully set up a dev container for Rust!
+6. If your output matches, you've successfully set up a dev container for Rust. Congratulations!🎉
