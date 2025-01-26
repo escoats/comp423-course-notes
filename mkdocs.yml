@@ -3,6 +3,9 @@ theme:
   name: material
   features:
     - content.code.copy
+  icon:
+    admonition:
+      chatty: material/chat-alert
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -11,3 +14,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details
